@@ -1,0 +1,21 @@
+{
+  "name": "pousada-pedra-furada",
+  "version": "1.0.0",
+  "description": "Aplicação web desenvolvida como projeto da disciplina **Desenvolvimento Web III**.   O objetivo do projeto é criar uma aplicação moderna utilizando **Next.js**, seguindo boas práticas de desenvolvimento como **TDD (Test Driven Development)**, **CI/CD** e **controle de versão com Git**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriel2728/Pousada-Pedra-Furada.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gabriel2728/Pousada-Pedra-Furada/issues"
+  },
+  "homepage": "https://github.com/gabriel2728/Pousada-Pedra-Furada#readme"
+}
