@@ -1,10 +1,13 @@
 {
   "name": "pousada-pedra-furada",
   "version": "1.0.0",
-  "description": "Aplicação web desenvolvida como projeto da disciplina **Desenvolvimento Web III**.   O objetivo do projeto é criar uma aplicação moderna utilizando **Next.js**, seguindo boas práticas de desenvolvimento como **TDD (Test Driven Development)**, **CI/CD** e **controle de versão com Git**.",
+  "description": "Aplicação web desenvolvida como projeto da disciplina Desenvolvimento Web III.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest --watchAll"
   },
   "repository": {
     "type": "git",
@@ -17,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/gabriel2728/Pousada-Pedra-Furada/issues"
   },
-  "homepage": "https://github.com/gabriel2728/Pousada-Pedra-Furada#readme"
+  "homepage": "https://github.com/gabriel2728/Pousada-Pedra-Furada#readme",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "babel-jest": "^30.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0"
+  }
 }
