@@ -1,0 +1,24 @@
+{
+  "name": "pousada-pedra-furada",
+  "version": "1.0.0",
+  "description": "Sistema web SPA desenvolvido para gerenciar tarefas do setor de limpeza da pousada.",
+  "main": "next.config.js",
+  "scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "test": "jest --watchAll"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriel2728/pousada-pedra-furada.git"
+  },
+  "keywords": [],
+  "author": "Gabriel",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gabriel2728/pousada-pedra-furada/issues"
+  },
+  "homepage": "https://github.com/gabriel2728/pousada-pedra-furada#readme"
+}
