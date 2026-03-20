@@ -1,11 +1,14 @@
+import { useRouter } from "next/router";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
 import Button from "../components/Button";
 
 export default function Home() {
+  const router = useRouter();
+
   const handleReserve = () => {
-    alert("Função de reserva ainda não implementada!");
+    router.push("/contato");
   };
 
   return (
