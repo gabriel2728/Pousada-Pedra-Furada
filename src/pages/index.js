@@ -1,10 +1,24 @@
-export default function Home() {
-  return (
-    <div>
-      <h1>Pousada Pedra Furada</h1>
-      <p>Sistema de gerenciamento interno</p>
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Card from "../components/Card";
+import Button from "../components/Button";
 
-      <a href="/login">Ir para Login</a>
-    </div>
+export default function Home() {
+  const handleReserve = () => {
+    alert("Função de reserva ainda não implementada!");
+  };
+
+  return (
+    <main>
+      <Header />
+      <section style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", padding: "20px" }}>
+        <Card title="Bem-vindo!" description="Conheça nossa pousada e serviços." />
+        <Card title="Reservas" description="Faça sua reserva online de forma simples." />
+      </section>
+      <div style={{ textAlign: "center", margin: "20px" }}>
+        <Button text="Reservar Agora" onClick={handleReserve} />
+      </div>
+      <Footer />
+    </main>
   );
 }
