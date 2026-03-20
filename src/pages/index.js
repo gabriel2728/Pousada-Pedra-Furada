@@ -10,15 +10,29 @@ export default function Home() {
 
   return (
     <main>
+
+      {/* 🔝 HERO (parte principal) */}
       <Header />
-      <section style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", padding: "20px" }}>
-        <Card title="Bem-vindo!" description="Conheça nossa pousada e serviços." />
-        <Card title="Reservas" description="Faça sua reserva online de forma simples." />
+
+      <section style={{ textAlign: "center", padding: "40px" }}>
+        <h1>Bem-vindo à Pousada Pedra Furada</h1>
+        <p>Conforto, tranquilidade e natureza em um só lugar 🌿</p>
       </section>
-      <div style={{ textAlign: "center", margin: "20px" }}>
+
+      {/* 🏨 SERVIÇOS */}
+      <section style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", padding: "20px" }}>
+        <Card title="Acomodações" description="Quartos confortáveis e bem equipados." />
+        <Card title="Reservas" description="Faça sua reserva online de forma simples." />
+        <Card title="Localização" description="Perto das melhores atrações turísticas." />
+      </section>
+
+      {/* 🔘 CALL TO ACTION */}
+      <div style={{ textAlign: "center", margin: "30px" }}>
         <Button text="Reservar Agora" onClick={handleReserve} />
       </div>
+
       <Footer />
+
     </main>
   );
 }
