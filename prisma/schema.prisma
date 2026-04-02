@@ -1,0 +1,33 @@
+// prisma/schema.prisma
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Tarefa {
+  id        Int      @id @default(autoincrement())
+  titulo    String
+  descricao String?
+  status    String   @default("Atribuída")
+  createdAt DateTime @default(now())
+}
+
+model User {
+  id       Int      @id @default(autoincrement())
+  name     String
+  email    String   @unique
+  password String
+  role     Role     @default(FUNCIONARIO)
+  createdAt DateTime @default(now())
+}
+
+enum Role {
+  ADMIN
+  GESTOR
+  FUNCIONARIO
+}

@@ -13,7 +13,6 @@ export default function Home() {
 
   return (
     <main>
-
       {/* 🔝 HERO (parte principal) */}
       <Header />
 
@@ -23,7 +22,14 @@ export default function Home() {
       </section>
 
       {/* 🏨 SERVIÇOS */}
-      <section style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", padding: "20px" }}>
+      <section
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          padding: "20px",
+        }}
+      >
         <Card title="Acomodações" description="Quartos confortáveis e bem equipados." />
         <Card title="Reservas" description="Faça sua reserva online de forma simples." />
         <Card title="Localização" description="Perto das melhores atrações turísticas." />
@@ -35,7 +41,6 @@ export default function Home() {
       </div>
 
       <Footer />
-
     </main>
   );
 }
